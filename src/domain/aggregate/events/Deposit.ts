@@ -1,7 +1,7 @@
 import Money from "../valueobjects/Money";
 import DomainEvent from "./DomainEvent";
 
-export default class Deposit implements DomainEvent{
+export default class Deposit extends DomainEvent{
     money : Money;
     date: Date;
     type: string;
@@ -9,13 +9,13 @@ export default class Deposit implements DomainEvent{
      *
      */
     constructor(money: Money) {
+        super();
         this.money = money;    
         this.date = new Date();
         this.type = 'Deposit';
     }
-
+    
     toString(): string {
-        return `${this.type} at ${this.date.toLocaleString()}`;
+        return super.toString();
     }
-
 }
