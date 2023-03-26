@@ -1,0 +1,20 @@
+Entity
+
+ParkingLot
+
+code
+capacity
+openHour
+closeHour
+
+ParkedCar
+
+code
+plate
+parkingLotCode
+date
+
+Use Cases
+
+EnterParkingLot
+LeaveParkingLot
