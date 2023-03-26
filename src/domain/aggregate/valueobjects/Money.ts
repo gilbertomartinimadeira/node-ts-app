@@ -23,4 +23,8 @@ export default class Money {
     lesserThanOrEqual(money : Money) :boolean {
         return  this.units <= money.units && this.cents <= money.cents;
     }
+
+    toString() : string {
+        return `$ ${this.units},${this.cents}`;
+    }
 }

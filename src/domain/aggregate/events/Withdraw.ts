@@ -16,6 +16,6 @@ export default class Withdraw extends DomainEvent {
     }
 
     toString(): string {
-        return super.toString();
+        return `${super.toString()} -> ${this.money.toString()}`;
     }
 }
